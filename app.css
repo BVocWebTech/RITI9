@@ -234,7 +234,10 @@ a.movie-item:hover {
   size: 4px;
 
 }
-
+.fileImage{
+object-fit: contain;
+max-width:100%;
+}
 .hero-slide-item-content {
     position: absolute;
     top: 0;
