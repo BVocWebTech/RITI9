@@ -80,6 +80,13 @@ img {
     color: var(--text-color);
     height: var(--nav-height);
 }
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+}
 
 .nav a {
     color: var(--text-color);
