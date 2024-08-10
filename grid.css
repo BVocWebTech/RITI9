@@ -4,6 +4,11 @@
     margin: 0 -15px;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
 [class*="col-"] {
     padding: 0 15px;
 }
