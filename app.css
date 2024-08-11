@@ -216,9 +216,7 @@ a.movie-item:hover {
     transform: rotate(-45deg);
     left: 6px;
 }
-.hero-slide{
-    width: 100%;
-}
+
 .hero-slide-item {
     
     position: relative;
