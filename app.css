@@ -218,9 +218,7 @@ a.movie-item:hover {
 }
 .hero-slide{
     height:300px;
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+   
 }
 .hero-slide-item {
     
