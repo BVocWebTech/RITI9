@@ -73,8 +73,8 @@ img {
     z-index: 99;
     background-color: #0f1425;
 }
-.nav-header {
-    float: left;
+.nav-hamburger {
+    float: right;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
