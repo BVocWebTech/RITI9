@@ -71,18 +71,9 @@ img {
     width: 100%;
     z-index: 99;
     background-color: #0f1425;
-    align-items: center;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--text-color);
-    height: var(--nav-height);
-}
-.nav-header {
-    float: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,8 +86,6 @@ img {
 }
 
 .logo {
-    display: inline-block;
-  vertical-align: middle;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -106,11 +95,9 @@ img {
     display: flex;
     align-items: center;
     padding: 0 20px;
-    vertical-align: middle;
 }
 
 .nav-menu li ~ li {
-    float: left;
     margin-left: 30px;
 }
 
@@ -229,7 +216,6 @@ a.movie-item:hover {
 
 .hero-slide-item img {
     width: 100%;
-    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -240,10 +226,7 @@ a.movie-item:hover {
   size: 4px;
 
 }
-.fileImage{
-object-fit: contain;
-max-width:100%;
-}
+
 .hero-slide-item-content {
     position: absolute;
     top: 0;
@@ -263,7 +246,7 @@ max-width:100%;
     justify-content: center;
     position: relative;
 }
-#more {display: none;}
+
 .item-content-wraper::before {
     content: "";
     position: absolute;
