@@ -25,12 +25,13 @@
 
 #inner {  
     border: 0.05em solid black;
-    font-size: 33px;
+    font-size: 48px;
 }
 
 #outer {
   width:100%;
   display: flex;
   justify-content: center;
+    font-size: 48px;
 }
 
