@@ -82,7 +82,6 @@ img {
 }
 
 .nav {
-    display: inline-block;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
