@@ -74,9 +74,8 @@ img {
     background-color: #0f1425;
 }
 .nav-hamburger {
-    float: right;
+    display: inline-block;
     align-items: center;
-    justify-content: space-between;
     color: var(--text-color);
     height: var(--nav-height);
 }
