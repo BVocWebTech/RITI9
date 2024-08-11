@@ -229,6 +229,10 @@ a.movie-item:hover {
     top: 0;
     left: 0;
 }
+.fileImage{
+object-fit: contain;
+max-width:100%;
+}
 
 .bg img{
   position:right;
