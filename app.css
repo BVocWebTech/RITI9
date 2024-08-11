@@ -72,6 +72,13 @@ img {
     z-index: 99;
     background-color: #0f1425;
 }
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+}
 
 .nav {
     display: flex;
@@ -100,7 +107,9 @@ img {
 .nav-menu li ~ li {
     margin-left: 30px;
 }
-
+.nav-menu li{
+  display: inline-block;  
+}
 .nav-menu a {
     text-transform: uppercase;
     font-weight: 700;
@@ -216,9 +225,14 @@ a.movie-item:hover {
 
 .hero-slide-item img {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+.fileImage{
+object-fit: contain;
+max-width:100%;
 }
 
 .bg img{

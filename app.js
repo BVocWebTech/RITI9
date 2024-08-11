@@ -59,6 +59,21 @@ $(document).ready(() => {
 
 
 
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
 
 
 
@@ -97,7 +112,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.getElementById("read_more").addEventListener( 'click' , changeClass);
 
+function changeClass() {
+  var content = document.getElementById("extra_content");
+  var btn = document.getElementById("read_more");
+  content.classList.toggle('show');
+
+  if (content.classList.contains("show")) {
+      btn.innerHTML = "Show Less";
+  } else {
+      btn.innerHTML = "Show More";
+  }
+}
 
 
 
