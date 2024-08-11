@@ -8,6 +8,22 @@
 [class*="col-"] {
   width: 100%;
 }
+@media (max-width: 650px) {
+  .extra_content {
+    display: none;
+  }
+  #read_more {
+    display: block;
+  }
+}
+
+.read_more  {
+  display: none;
+}
+
+.show {
+   display: block!important;
+}
 /* MEDIUM SCREEN */
 
 @media only screen and (max-width: 1280px) {
