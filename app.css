@@ -74,7 +74,7 @@ img {
     background-color: #0f1425;
 }
 .nav-header {
-    display: inline-block;
+    float: left;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
