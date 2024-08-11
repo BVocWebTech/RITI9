@@ -257,7 +257,7 @@ max-width:100%;
     justify-content: center;
     position: relative;
 }
-
+#more {display: none;}
 .item-content-wraper::before {
     content: "";
     position: absolute;
