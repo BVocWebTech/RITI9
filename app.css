@@ -76,8 +76,7 @@ img {
 .nav-hamburger {
     display: inline-block;
     align-items: center;
-    color: var(--text-color);
-    height: var(--nav-height);
+    
 }
 
 .nav {
