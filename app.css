@@ -695,7 +695,11 @@ footer .content {
             margin-bottom: 20px;
         }
 
-        
+        .fileImage{
+            display:block; //already an attempt to fix, no effect
+            height:auto; //same as above
+            width:100%;
+        }
 
 
 
