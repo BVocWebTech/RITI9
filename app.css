@@ -107,7 +107,7 @@ img {
 .nav-menu li ~ li {
     margin-left: 30px;
 }
-.nav li{
+.nav-menu li{
   display: inline-block;  
 }
 .nav-menu a {
