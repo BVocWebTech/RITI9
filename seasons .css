@@ -22,3 +22,14 @@
     border: 2px solid #f7f2eb; 
     padding: 0px; 
   }
+
+#inner {  
+  border: 0.05em solid black;
+}
+
+#outer {
+  border: 0.05em solid red;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
