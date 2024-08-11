@@ -74,9 +74,10 @@ img {
 }
 
 .nav {
-    float: left;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    text-align: right;
     justify-content: space-between;
     color: var(--text-color);
     height: var(--nav-height);
