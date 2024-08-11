@@ -72,6 +72,13 @@ img {
     z-index: 99;
     background-color: #0f1425;
 }
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+}
 
 .nav {
     display: flex;
