@@ -74,7 +74,7 @@ img {
     background-color: #0f1425;
 }
 .nav-header {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
@@ -82,7 +82,7 @@ img {
 }
 
 .nav {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
