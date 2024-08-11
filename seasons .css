@@ -24,8 +24,8 @@
   }
 
 #inner {  
-    border: 0.05em solid black;
     font-size: 48px;
+    font-weight: bold;
 }
 
 #outer {
