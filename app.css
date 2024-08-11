@@ -105,10 +105,11 @@ img {
 }
 
 .nav-menu li ~ li {
-    display: inline;
     margin-left: 30px;
 }
-
+.nav li{
+  display: inline; //or inline-block
+}
 .nav-menu a {
     text-transform: uppercase;
     font-weight: 700;
