@@ -294,6 +294,7 @@ a.movie-item:hover {
     font-size: 1.15rem;
     margin-top: var(--space-top);
     line-height: 1.5rem;
+    
 }
 
 .item-action {
@@ -696,9 +697,8 @@ footer .content {
         }
 
         .fileImage{
-            display:block; //already an attempt to fix, no effect
-            height:auto; //same as above
-            width:100%;
+            object-fit: contain;
+            max-width:100%;
         }
 
 
