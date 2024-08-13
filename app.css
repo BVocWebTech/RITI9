@@ -81,11 +81,16 @@ img {
     justify-content: space-between;
     color: var(--text-color);
     height: var(--nav-height);
+    overflow: hidden; /* Hide any overflow */
 }
 
 .nav a {
     color: var(--text-color);
 }
+
+
+
+
 
 .logo {
     font-size: 2rem;
@@ -702,7 +707,7 @@ footer .content {
             max-width:100%;
         }
 
-
+       
 
 
 
