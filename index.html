@@ -87,11 +87,21 @@
                             </div>
                             <div class="item-content-description top-down delay-4">
                                 "Trapped in a world of puzzles, can you escape?<br>Our game collection puts you in the midst of a mental escape room, where you'll need to use your wits, logic, and creativity to break free. With each puzzle solved, you'll unlock a piece of the mystery, but beware - the clock is ticking, and the challenges will only get tougher. 
-        <div id="more" style="display:none;">
-    Can you stay calm under pressure, think outside the box, and unravel the tangled threads of logic to emerge victorious? Take on the ultimate mental adventure and find out if you have what it takes to escape the puzzle room!"Will you be able to keep your cool and escape before time runs out, or will you be trapped forever? The choice is yours in this thrilling puzzle adventure!"
+                                <span id="points">...</span>
+
+                                <!-- Define the text that would be 
+                                        hidden by default and only shown 
+                                        when clicked on the button -->
+                                <span id="moreText">
+    Can you stay calm under pressure, think outside the box, and unravel the tangled threads of logic to emerge victorious? Take on the ultimate mental adventure and find out if you have what it takes to escape the puzzle room!"Will you be able to keep your cool and escape before time runs out, or will you be trapped forever? The choice is yours in this thrilling puzzle adventure!" </span>
+    <!-- Trigger toggleText() when the 
+            button is clicked -->
+            <button onclick="toggleText()" id="textButton">
+                Show More
+            </button>
     
 </div>
-<a href="javascript:showMore()" id="link"><br><br>Read More...</a>
+
                                 
                                  
                             </div>
@@ -828,98 +838,8 @@ Design a first-look movie poster from a captivating story thread. Create a visua
 
     <!-- END PRICING SECTION -->
 
-    <!-- FOOTER SECTION --> 
-    <footer class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-md-6 col-sm-12">
-                    <div class="content">
-                        <a href="#" class="logo">
-                            <!-- <i class='bx bx-movie-play bx-tada main-color'></i> -->
-                            Ri<span class="main-color">t</span>i
-                        </a>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et. Dolores, quibusdam?
-                        </p>
-                        <div class="social-list">
-                            <a href="#" class="social-item">
-                                <i class="bx bxl-facebook"></i>
-                            </a>
-                            <a href="#" class="social-item">
-                                <i class="bx bxl-twitter"></i>
-                            </a>
-                            <a href="#" class="social-item">
-                                <i class="bx bxl-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-md-6 col-sm-12">
-                    <div class="row">
-                        <div class="col-3 col-md-6 col-sm-6">
-                            <div class="content">
-                                <p><b>Riti</b></p>
-                                <ul class="footer-menu">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">My profile</a></li>
-                                    <li><a href="#">Pricing plans</a></li>
-                                    <li><a href="#">Contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-3 col-md-6 col-sm-6">
-                            <div class="content">
-                                <p><b>Browse</b></p>
-                                <ul class="footer-menu">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">My profile</a></li>
-                                    <li><a href="#">Pricing plans</a></li>
-                                    <li><a href="#">Contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-3 col-md-6 col-sm-6">
-                            <div class="content">
-                                <p><b>Help</b></p>
-                                <ul class="footer-menu">
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">My profile</a></li>
-                                    <li><a href="#">Pricing plans</a></li>
-                                    <li><a href="#">Contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="col-3 col-md-6 col-sm-6">
-                            <div class="content">
-                                <p><b>Download app</b></p>
-                                <ul class="footer-menu">
-                                    <li>
-                                        <a href="#">
-                                            <img src="./images/google-play.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="./images/app-store.jpg" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- END FOOTER SECTION -->
-
-    <!-- COPYRIGHT SECTION -->
-    <div class="copyright">
-        Copyright 2021 <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
-            Tuat Tran Anh</a>
-    </div>
-    <!-- END COPYRIGHT SECTION -->
-
+   
+   
     <!-- SCRIPT -->
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -928,12 +848,52 @@ Design a first-look movie poster from a captivating story thread. Create a visua
     <!-- APP SCRIPT -->
     <script src="app.js"></script>
     <script>
-        function showMore(){
-        //removes the link
-        document.getElementById('link').parentElement.removeChild('link');
-        //shows the #more
-        document.getElementById('more').style.display = "block";
-    }
+        function toggleText() {
+
+            // Get all the elements from the page
+            let points =
+                document.getElementById("points");
+
+            let showMoreText =
+                document.getElementById("moreText");
+
+            let buttonText =
+                document.getElementById("textButton");
+
+            // If the display property of the dots 
+            // to be displayed is already set to 
+            // 'none' (that is hidden) then this 
+            // section of code triggers
+            if (points.style.display === "none") {
+
+                // Hide the text between the span
+                // elements
+                showMoreText.style.display = "none";
+
+                // Show the dots after the text
+                points.style.display = "inline";
+
+                // Change the text on button to 
+                // 'Show More'
+                buttonText.innerHTML = "Show More";
+            }
+
+            // If the hidden portion is revealed,
+            // we will change it back to be hidden
+            else {
+
+                // Show the text between the
+                // span elements
+                showMoreText.style.display = "inline";
+
+                // Hide the dots after the text
+                points.style.display = "none";
+
+                // Change the text on button
+                // to 'Show Less'
+                buttonText.innerHTML = "Show Less";
+            }
+        }
     </script>
 </body>
 
