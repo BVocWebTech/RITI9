@@ -129,7 +129,7 @@
 }
 
 /* Custom, iPhone Retina */ 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 320px) {
     .col-sm-1 {
         width: 8.33%;
     }

@@ -35,6 +35,7 @@ body {
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
+    overflow-x: hidden;
 }
 
 a {
