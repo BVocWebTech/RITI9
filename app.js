@@ -3,7 +3,11 @@ $(document).ready(() => {
         $('#hamburger-menu').toggleClass('active')
         $('#nav-menu').toggleClass('active')
     })
-
+    $('#nav-menu a').click(() => {
+        $('#hamburger-menu').removeClass('active');
+        $('#nav-menu').removeClass('active');
+    });
+});
     // setting owl carousel
 
     let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
