@@ -779,7 +779,47 @@ Design a first-look movie poster from a captivating story thread. Create a visua
                     Contact us
                 </div>
     
+<style>
+     /* Media query for mobile screens */
+     @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+        
+            tr {
+                margin-bottom: 15px;
+            }
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            td {
+                position: relative;
+                padding-left: 20%;
+                text-align: right;
+            }
+            td:before {
+                position: absolute;
+                top: 12px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+            /* Content for the labels in mobile view */
+        tr:nth-of-type(1):before { content: "HoD:"; }
+        tr:nth-of-type(2):before { content: "Student Coordinators:"; }
+        tr:nth-of-type(3):before { content: "B.Voc Web Technology:"; }
+        tr:nth-of-type(4):before { content: "B.Sc Computer Science:"; }
+        tr:nth-of-type(5):before { content: "E-Mail:"; }
+        }
+        
 
+</style>
 
 <table width="50%" style="text-align: left;">
         <tr>
@@ -800,11 +840,10 @@ Design a first-look movie poster from a captivating story thread. Create a visua
             <td>ANGEL LIN K B</td>
             <td>7012460629</td>
         </tr>
-</table>
-<table width="50%" style="text-align: left;">
         <tr>
-            <th>E-Mail: <br>
-            computerscience@vimalacollege.edu.in<br>vimalacsdept@gmail.com</th>
+            <th>E-Mail: </th>
+            <td>computerscience@vimalacollege.edu.in</td>
+            <td>vimalacsdept@gmail.com</td>
         </tr>
 </table>
 
