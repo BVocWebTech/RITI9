@@ -25,18 +25,17 @@
         .content {
             padding: 20px;
             background: transparent;
-            margin-top: 10px;
+            margin-top: 50px;
         }
-        .zoom-container {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .zoom-container img {
+                
+        
+     /* Media query for mobile screens */
+     @media (max-width: 600px) {
+        .content img {
             width: 100%;
             transition: transform 0.2s ease;
         }
-        
+     }
     </style>
 </head>
 <body>
@@ -62,16 +61,16 @@
         </div>
     </div>
 <!-- END NAV -->
-    <!--
+   
     <div class="container">
         <div class="content">
             <img src="ritiimg/event typeblitz.jpg" alt="" style="width:100%;">
         </div>
     </div>
--->
+<!--
     <div class="zoom-container">
         <img src="ritiimg/event typeblitz.jpg" alt="Zoomable Image" id="zoomable-image" >
-    </div>
+    </div>--> 
 <!-- SCRIPT -->
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -79,14 +78,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <!-- APP SCRIPT -->
     <script src="app.js"></script>
-    <script>
-        const img = document.getElementById('zoomable-image');
-        let scale = 1;
-
-        img.addEventListener('dblclick', function () {
-            scale = scale === 1 ? 2 : 1; // Toggle between 1x and 2x zoom
-            img.style.transform = `scale(${scale})`;
-        });
-    </script>
+    
 </body>
 </html>
