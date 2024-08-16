@@ -490,7 +490,7 @@ footer.section {
     margin-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    background-color: var(--box-bg);
+    background-color: var(--main-color);;
 }
 
 footer a:hover {
@@ -552,8 +552,9 @@ footer .content {
 .copyright {
     padding: 10px;
     border-top: 1px solid var(--body-bg);
-    background-color: var(--box-bg);
+    background-color:  rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 100%;
 }
 
 /* RESPONSIVE */
